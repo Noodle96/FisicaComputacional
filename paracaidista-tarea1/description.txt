@@ -1,0 +1,2 @@
+Ejercicio de el paracaidista -Referencia del libro de metodos numericos para ingenieros
+de Steven C. Chapra -pag 12
