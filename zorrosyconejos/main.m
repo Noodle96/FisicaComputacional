@@ -8,13 +8,13 @@ c = 0.3;
 d = 0.05;
 tf = 100;
 to = 0;
-N = 10000;
+N = 5000;
 delta = (tf-to) / N;
 
-R(1) = 15;
-F(1) = 5;
+R(1) = 3;
+F(1) = 1;
 
-for e = 1 : 10000
+for e = 1 : 50000
   R(e+1) = R(e) + R(e)*(a-b*F(e)) * delta;  
   F(e+1) = F(e) + F(e) *(-c + d *R(e))* delta;
   
@@ -24,4 +24,6 @@ endfor
 plot(R);
 hold on;
 plot(F);
-grid
+grid;
+%plot(F);
+%plot(R,F);
